@@ -20,3 +20,22 @@ function addPlayer(){
 	}
 	
 }
+
+function addValues(){
+	roundNum++;
+	let values = $('.form-control').toArray().map(e=>{
+		return parseInt(e.value);
+	});
+
+	let priorValues = $('tbody>tr').last().children().toArray().map(e=>{
+		return parseInt(e.textContent);
+	});
+
+
+	$('tbody:last-child').append(`<tr id="round-${roundNum}"></tr>`);
+
+	for (let i = 0; i < values.length; i++) {
+		$(`#round-${roundNum}`).append(`<td >${priorValues[i]+values[i]}</td>`);
+	}
+
+}
