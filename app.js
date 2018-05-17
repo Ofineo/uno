@@ -1,5 +1,6 @@
 let players = 0;
 let start=0;
+let roundNum= 0;
 
 function playerModal(){
 	$('#playerModal').modal('show');
@@ -37,5 +38,19 @@ function addValues(){
 	for (let i = 0; i < values.length; i++) {
 		$(`#round-${roundNum}`).append(`<td >${priorValues[i]+values[i]}</td>`);
 	}
+
+	checkTable();
+}
+
+function checkTable(){
+	let round = $('tbody>tr').last().children().toArray().map(e=>{
+		return e.textContent;
+	});
+	const min = Math.min(...round);
+	const max = Math.max(...round);
+
+	console.log($('tbody>tr').last().children().filter((i,e)=>e.textContent == min));
+	$('tbody>tr').last().children().filter((i,e)=>e.textContent == min).toggleClass('bg-success');
+	$('tbody>tr').last().children().filter((i,e)=>e.textContent == max).toggleClass('bg-danger');
 
 }
