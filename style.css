@@ -1,0 +1,68 @@
+body {
+    background-image: url(UnoBW.jpg);
+	background-repeat: repeat-y;
+    background-position: left top;
+	background-size:cover;	
+	color: white;
+}
+
+.players{
+font-size: 40px;
+}
+
+.winner,
+.losser{
+	color:black;
+	font-size: 2em;
+}
+
+.add-players{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.left{
+	position: absolute;
+	top: 500px;
+    left: 0px;
+}
+
+.right{
+	position: absolute;
+	top: 500px;
+	right: 0px;
+}
+
+.wide{
+	height: 30px;
+}
+.counter{
+	position: absolute;
+	right: 650px;
+	bottom: 0px;
+}
+#question{
+	font-size: 7rem;
+	color: blue;
+	font-weight: bold;
+	}
+
+.add-players {
+	background-color: blue;  
+	border-radius: 5px;
+	color: white;
+	padding: .5em;
+	text-decoration: none;
+  }
+  
+  .add-players:focus,
+  .add-players:hover {
+	background-color: lightskyblue;
+	color: White;
+	text-decoration: none;
+  }
+
+  input.form-control.small-form{
+	  width: 5em;
+  }
