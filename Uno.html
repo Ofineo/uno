@@ -49,3 +49,58 @@
 </body>
 
 </html>
+
+<!--Modal -->
+<div class="modal fade" tabindex="-1" id="playerModal" role="dialog">
+	<div class="modal-dialog">
+		<!--Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+				<button type="button" class="close" data-dismiss="modal">
+					<i class="fa fa-times fa-3x" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="PlayerName" style="color:black;">Player Name</label>
+						<input type="text" id="PlayerName" rows="1">
+					</div>
+				</form>
+				<button class="btn btn-danger btn-lg" type="button" data-dismiss="modal">
+					<i class="fa fa-times"></i>
+					Close</button>
+				<button class="btn btn-success btn-lg" type="button" onclick="addPlayer()">
+					<i class="fa fa-check"></i>Add</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="winningModal" role="dialog">
+	<div class="modal-dialog">
+		<!--Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="lr">
+					<div class="rl"></div>
+				</div>
+				<button type="button" class="close" data-dismiss="modal">
+					<i class="fa fa-times fa-3x" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div>
+					<p class="winner"></p>
+					<p class="losser"></p>
+				</div>
+				<button class="btn btn-danger btn-lg" type="button" data-dismiss="modal">
+					<i class="fa fa-times"></i>
+					Close</button>
+			</div>
+		</div>
+	</div>
+</div>

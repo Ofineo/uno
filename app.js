@@ -53,10 +53,4 @@ function checkTable(){
 	$('tbody>tr').last().children().filter((i,e)=>e.textContent == min).toggleClass('bg-success');
 	$('tbody>tr').last().children().filter((i,e)=>e.textContent == max).toggleClass('bg-danger');
 
-	// if(max>= 500){
-
-	// 	$('#winningModal').modal('show');
-	// 	$('.winner').text('The Winner: Jordi');
-	// 	$('.losser').text('The Losser: Fernando');
-	// }
 }
