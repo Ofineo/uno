@@ -1,0 +1,27 @@
+{
+  "name": "uno",
+  "version": "1.0.0",
+  "description": "basic site to manage UNO games",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ofineo/uno.git"
+  },
+  "author": "Jordi Melendez <ofineo@gmail.com> (http://www.jordimelendez.uk)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ofineo/uno/issues"
+  },
+  "homepage": "https://github.com/Ofineo/uno#readme",
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
