@@ -2,16 +2,19 @@
 const path = require("path");
 const CleanPlugin = require("clean-webpack-plugin");
 
-module.export = {
-  mode: "development",
-  entry: "./src/app.js",
-  devtool: "eval-cheap-module-source-map",
+module.exports = {
+  mode: 'development',
+  entry: './src/app.js',
   output: {
-    filename: "app.js",
-    path: path.resolve(__dirname, "assets"),
+    filename: 'app.js',
+    path: path.resolve(__dirname, 'assets', 'scripts'),
+    publicPath: 'assets/scripts/'
   },
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
-    contentBase: "./",
+    contentBase: './'
   },
-  plugin: [new CleanPlugin.CleanWebpackPlugin()],
+  plugins: [
+    new CleanPlugin.CleanWebpackPlugin()
+  ]
 };
